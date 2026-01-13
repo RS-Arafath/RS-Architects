@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+#header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #FF900E10;
+}
+
+/* ~~~~~~~~~share-style~~~~~~~ */
+.nav-container,
+.hero-container, main {
+  width: 75%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.primary-button {
+  border: none;
+  background-color: #FF900E;
+  color: white;
+  border-radius: 8px;
+  padding: 18px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ~~~~~~~~~common style~~~~~~~~~ */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-tittle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #131313;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-menu li {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 26px;
+  color: #424242;
+}
+
+/* ~~~~~~~hero style~~~~~ */
+.hero {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.607);
+  padding-bottom: 45px;
+}
+
+.hero-img {
+  width: 100%;
+  /* height: 700px; */
+}
+
+.hero-content {
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  max-width: 862px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 100px;
+
+}
+
+.banner-tittle {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #131313;
+  margin-bottom: 25px;
+}
+
+.banner-discription {
+  font-size: 1rem;
+  color: #727272;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+
+/* ~~responsive media query~~ */
+/* for mobile */
+@media screen and (max-width:576px) {
+
+  .nav-menu,
+  .nav-content{
+    flex-direction: column;
+  }
+
+  .nav-container,
+  .hero-container {
+    width: 95%;
+  }
+
+  .nav-tittle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+
+  .banner-tittle {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .hero-content {
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .primary-button {
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.11rem;
+  }
+}
