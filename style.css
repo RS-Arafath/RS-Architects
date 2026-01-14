@@ -14,10 +14,16 @@
 
 /* ~~~~~~~~~share-style~~~~~~~ */
 .nav-container,
-.hero-container, main {
+.hero-container,
+main {
   width: 75%;
+  max-width: 1440px;
   margin: 0 auto;
   align-items: center;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .primary-button {
@@ -45,8 +51,8 @@
   color: #131313;
 }
 
+
 .nav-menu {
-  display: flex;
   gap: 40px;
 }
 
@@ -74,10 +80,6 @@
 }
 
 .hero-content {
-  /* margin-top: 100px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   align-items: center;
   max-width: 862px;
@@ -101,12 +103,73 @@
   margin-bottom: 25px;
 }
 
+/* ~~~~~~~~~~~~team and feature style~~~~~~~~ */
+
+.teams {
+  margin-top: 85px;
+}
+
+.team-container {
+  gap: 70px;
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+}
+
+.our-features {
+  width: 537px;
+  text-align: left;
+}
+
+.feature-tittle {
+  color: #131313;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+}
+
+.feature-heading-color1 {
+  color: #727272;
+  font-weight: 500;
+}
+
+.feature-heading-color2 {
+  color: #FF900E;
+  font-weight: bold;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #727272;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ~~responsive media query~~ */
 /* for mobile */
 @media screen and (max-width:576px) {
 
   .nav-menu,
-  .nav-content{
+  .nav-content {
     flex-direction: column;
   }
 
@@ -143,5 +206,22 @@
     border: none;
     padding: 12px 18px;
     font-size: 1.11rem;
+  }
+
+  /* ~~~teams feature~~~ */
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-features {
+    width: 95%;
+  }
+
+  .team-container {
+    gap: 40px;
   }
 }
